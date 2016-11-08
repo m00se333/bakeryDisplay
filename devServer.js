@@ -22,6 +22,6 @@ app.listen(7770, 'localhost', function(err) {
     console.log(err);
     return;
   }
-
+  console.log(__dirname);
   console.log('Listening at http://localhost:7770');
 });

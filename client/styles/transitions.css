@@ -1,0 +1,16 @@
+.openGallery-enter {
+  transition: all 1s; }
+
+.slideInPictures-appear {
+  transition: all 1s;
+  flex: 0;
+  transform: translateX(-200%); }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait), only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .slideInPictures-appear {
+      transition: all 1s;
+      transform: translateX(0%); } }
+
+.slideInPictures-appear-active {
+  transform: translateX(0%); }
+
+/*# sourceMappingURL=transitions.css.map */

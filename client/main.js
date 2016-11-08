@@ -1,18 +1,41 @@
 import React from "react";
-
 import { render } from "react-dom";
+import { BrowserRouter, Match, Miss } from "react-router";
 
-//components
+// Components
+
+import App from "./components/App.js";
+import NotFound from "./components/NotFound.js";
+import Main from "./components/Main.js";
+
+// import CSS
+
+import "./styles/style.css";
 
 
-//router dependencies
+// Router dependencies
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { Provider } from "react-redux";
-import store, { history } from "./store";
+
+
+// store
+import { store, history } from "./store.js";
+
+const router = (
+
+    <Provider store={store}>
+      <Router history={history}>
+        <Route path="/" component={App}>
+          <IndexRoute component={Main}></IndexRoute> 
+          <Route path="/view/:postId" component={NotFound}></Route>
+        </Route>
+      </Router>
+  </Provider>
+
+  )
 
 
 
 
-const router = (<h1>Hello</h1>)
 
-render(router, document.getElementById("root"));
+render(router, document.querySelector("#root"));

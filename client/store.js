@@ -11,11 +11,15 @@ import { browserHistory } from "react-router";
 
 import rootReducer from "./reducers/mainReducer";
 
+// data Objects
+
+import cakeGallery from './data/galleryObject';
+
 // default state object
 
 const defaultData = {
 
-  username: null
+  cakeGallery
 
 };
 
