@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
 import { routerReducer } from "react-router-redux";
 
-import userActions from "./userActionsReducer";
+import cakeGallery from "./cakeGalleryReducer.js";
+import open from "./openReducer.js";
 
-const rootReducer = combineReducers({userActions, routing: routerReducer});
+const rootReducer = combineReducers({cakeGallery, open, routing: routerReducer});
 
 export default rootReducer;

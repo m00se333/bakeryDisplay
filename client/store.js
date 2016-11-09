@@ -15,18 +15,20 @@ import rootReducer from "./reducers/mainReducer";
 
 import cakeGallery from './data/galleryObject';
 
+
 // default state object
 
-const defaultData = {
+const defaultState = {
 
-  cakeGallery
+  cakeGallery,
+  open: false
 
 };
 
 
-export const store = createStore(rootReducer, defaultData);
+const store = createStore(rootReducer, defaultState);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
-//export default store;
+export default store;
 

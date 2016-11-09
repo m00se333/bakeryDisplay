@@ -21,18 +21,7 @@ class App extends React.Component {
     this.closeGallery = this.closeGallery.bind(this);
     this.openAndClose = this.openAndClose.bind(this);
 
-    this.state = {
-      pictures: samplePasteries,
-      open: false,
-      contact: {
-
-        name: null,
-        phone: null,
-        email: null,
-        picture: null
-
-      }
-    }
+    
   }
 
   loadGallery(){
@@ -61,13 +50,13 @@ class App extends React.Component {
 
   openAndClose(){
 
-    if (this.state.open === true){
+    if (this.props.open === true){
       return{
         height: "50vh",
         
         }
       
-    } else if (this.state.open === false){
+    } else if (this.props.open === false){
       return {
         height: "0vh",
         
@@ -78,15 +67,15 @@ class App extends React.Component {
 
   render(){
 
-    const galleryComponent = <Gallery pictures={this.state.pictures}
-                               open={this.state.open}
+    const galleryComponent = <Gallery pictures={this.props.images}
+                               open={this.props.open}
                                openAndClose={this.openAndClose}
                                closeGallery={this.closeGallery}
                                />
 
     const nothing = null;
 
-    const galleryClosed = this.state.open === false;
+    const galleryClosed = this.props.open === false;
 
     const galleryStatus = galleryClosed? nothing : galleryComponent;
 
@@ -105,7 +94,7 @@ class App extends React.Component {
                        
               </CSSTransitionGroup>
 
-              <Contact contact={this.state.contact}
+              <Contact 
                      openGallery={this.openGallery}
                      closeGallery={this.closeGallery}/>
                                                       

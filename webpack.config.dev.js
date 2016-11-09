@@ -29,6 +29,11 @@ module.exports = {
       test: /\.css$/, 
       include: path.join(__dirname, 'client'),
       loader: 'style-loader!css-loader!stylus-loader'
+    },
+    // images
+    {
+      test: /\.jpg$/,
+      include: path.join(__dirname, "client")
     }
     ]
   }

@@ -19,7 +19,7 @@ import { Provider } from "react-redux";
 
 
 // store
-import { store, history } from "./store.js";
+import store, { history } from "./store.js";
 
 const router = (
 

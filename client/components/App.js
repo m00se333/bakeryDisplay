@@ -10,7 +10,8 @@ import NotMain from "./NotMain.js";
 
 function mapStateToProps(state){
   return {
-    images: state.cakeGallery
+    images: state.cakeGallery,
+    open: state.open
   }
 }
 
