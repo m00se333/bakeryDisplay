@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/userActions.js";
 
-import NotMain from "./NotMain.js";
+import StoreShell from "./StoreShell.js";
 
 
 function mapStateToProps(state){
@@ -22,6 +22,6 @@ function mapDispatchToProps(dispatch){
 
 
 
-const App = connect(mapStateToProps, mapDispatchToProps)(NotMain);
+const App = connect(mapStateToProps, mapDispatchToProps)(StoreShell);
                                           // immediately call what component you want to connect to (Main)
 export default App;

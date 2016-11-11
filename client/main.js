@@ -7,6 +7,7 @@ import { BrowserRouter, Match, Miss } from "react-router";
 import App from "./components/App.js";
 import NotFound from "./components/NotFound.js";
 import Main from "./components/Main.js";
+//import Contact from "./components/Contact.js"
 
 // import CSS
 
@@ -18,6 +19,9 @@ import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { Provider } from "react-redux";
 
 
+// make components const [COMPONENT] = React.createClass({})
+
+
 // store
 import store, { history } from "./store.js";
 
@@ -27,7 +31,7 @@ const router = (
       <Router history={history}>
         <Route path="/" component={App}>
           <IndexRoute component={Main}></IndexRoute> 
-          <Route path="/view/:postId" component={NotFound}></Route>
+          <Route path="*" component={NotFound}></Route>
         </Route>
       </Router>
   </Provider>

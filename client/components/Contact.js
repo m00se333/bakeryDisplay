@@ -1,12 +1,8 @@
 import React from "react";
 
 
-class Contact extends React.Component {
+const Contact =  React.createClass({
   
-  // constructor(){
-  //   super();
-  // }
-
   render(){
 
     return(
@@ -25,6 +21,6 @@ class Contact extends React.Component {
        
       )
   }
-}
+})
 
 export default Contact;

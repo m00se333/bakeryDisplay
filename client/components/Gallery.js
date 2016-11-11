@@ -1,13 +1,9 @@
 import React from "react";
 import CSSTransitionGroup from "react-addons-css-transition-group";
 
-class Gallery extends React.Component {
+const Gallery = React.createClass({
   
-  constructor(){
-    super();
-    this.renderImgPreviews = this.renderImgPreviews.bind(this);
-    this.detect = this.detect.bind(this);
-  }
+  
 
   renderImgPreviews(key){
     
@@ -16,11 +12,8 @@ class Gallery extends React.Component {
           <img src={this.props.pictures[key].image} alt="hello" />
         </div>
       )
-  }
+  },
 
-  detect(){
-    console.log("clicked the gallery")
-  }
 
 
   render(){
@@ -49,6 +42,6 @@ class Gallery extends React.Component {
 
     )
   }
-}
+})
 
 export default Gallery;

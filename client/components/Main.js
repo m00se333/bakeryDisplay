@@ -16,7 +16,6 @@ class App extends React.Component {
     super();
 
     this.loadGallery = this.loadGallery.bind(this);
-    this.deleteSamples = this.deleteSamples.bind(this);
     this.openGallery = this.openGallery.bind(this);
     this.closeGallery = this.closeGallery.bind(this);
     this.openAndClose = this.openAndClose.bind(this);
@@ -30,12 +29,7 @@ class App extends React.Component {
     })
   }
 
-  deleteSamples(){
-    this.setState({
-      pictures:{}
-    })
-  }
-
+ 
   openGallery(){
     this.setState({
       open: true
@@ -94,7 +88,7 @@ class App extends React.Component {
                        
               </CSSTransitionGroup>
 
-              <Contact 
+              <Contact
                      openGallery={this.openGallery}
                      closeGallery={this.closeGallery}/>
                                                       
