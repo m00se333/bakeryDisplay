@@ -1,87 +1,87 @@
 module.exports = {
   pastry1: {
     name: "Pastry!",
-    image: "./images/cake1.jpg",
+    image: "images/cake1.jpg",
     desc: "Tasty Pastry"
   },
   pastry2: {
     name: "Pastry!",
-    image: "./images/cake2.jpg",
+    image: "images/cake2.jpg",
     desc: "Tasty Pastry"
   },
   pastry3: {
     name: "Pastry!",
-    image: "./images/cake3.jpg",
+    image: "images/cake3.jpg",
     desc: "Tasty Pastry"
   },
   pastry4: {
     name: "Pastry!",
-    image: "./images/cake4.jpg",
+    image: "images/cake4.jpg",
     desc: "Tasty Pastry"
   },
   pastry5: {
     name: "Pastry!",
-    image: "./images/cake5.jpg",
+    image: "images/cake5.jpg",
     desc: "Tasty Pastry"
   },
   pastry6: {
     name: "Pastry!",
-    image: "./images/cake6.jpg",
+    image: "images/cake6.jpg",
     desc: "Tasty Pastry"
   },
   pastry7: {
     name: "Pastry!",
-    image: "./images/cake7.jpg",
+    image: "images/cake7.jpg",
     desc: "Tasty Pastry"
   },
   pastry8: {
     name: "Pastry!",
-    image: "./images/cake8.jpg",
+    image: "images/cake8.jpg",
     desc: "Tasty Pastry"
   },
   pastry9: {
     name: "Pastry!",
-    image: "./images/cake9.jpg",
+    image: "images/cake9.jpg",
     desc: "Tasty Pastry"
   },
   pastry10: {
     name: "Pastry!",
-    image: "./images/cake10.jpg",
+    image: "images/cake10.jpg",
     desc: "Tasty Pastry"
   },
   pastry11: {
     name: "Pastry!",
-    image: "./images/cake11.jpg",
+    image: "images/cake11.jpg",
     desc: "Tasty Pastry"
   },
   pastry12: {
     name: "Pastry!",
-    image: "./images/cake12.jpg",
+    image: "images/cake12.jpg",
     desc: "Tasty Pastry"
   },
   pastry13: {
     name: "Pastry!",
-    image: "./images/cake13.jpg",
+    image: "images/cake13.jpg",
     desc: "Tasty Pastry"
   },
   pastry14: {
     name: "Pastry!",
-    image: "./images/cake14.jpg",
+    image: "images/cake14.jpg",
     desc: "Tasty Pastry"
   },
   pastry15: {
     name: "Pastry!",
-    image: "./images/cake15.jpg",
+    image: "images/cake15.jpg",
     desc: "Tasty Pastry"
   },
   pastry16: {
     name: "Pastry!",
-    image: "./images/cake16.jpg",
+    image: "images/cake16.jpg",
     desc: "Tasty Pastry"
   },
   pastry17: {
     name: "Pastry!",
-    image: "./images/cake17.jpg",
+    image: "images/cake17.jpg",
     desc: "Tasty Pastry"
   }
 }

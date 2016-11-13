@@ -1,12 +1,12 @@
-// set username
 
-
-function setUsername(name){
-  console.log("set username?")
+export function openGallery(){
   return {
+    type: "OPEN_GALLERY"
+  }
+}
 
-    type: "SET_USER",
-    name
-    
+export function closeGallery(){
+  return{
+    type: "CLOSE_GALLERY"
   }
 }

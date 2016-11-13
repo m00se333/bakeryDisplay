@@ -10,7 +10,7 @@ import Header from "./Header.js"
 // State Data
 import samplePasteries from "../data/galleryObject.js";
 
-class App extends React.Component {
+class Main extends React.Component {
 
   constructor(){
     super();
@@ -73,6 +73,14 @@ class App extends React.Component {
 
     const galleryStatus = galleryClosed? nothing : galleryComponent;
 
+
+    // This is rendering the Header Component
+    //                       An Unnamed CSS Transiton group...
+    //                   and Contact Component
+
+    // this is also Main.js but exports App...
+
+
       return(
           <div id="appContainer">
               <Header />
@@ -89,8 +97,8 @@ class App extends React.Component {
               </CSSTransitionGroup>
 
               <Contact
-                     openGallery={this.openGallery}
-                     closeGallery={this.closeGallery}/>
+                     openGallery={this.props.openGallery}
+                     closeGallery={this.props.closeGallery}/>
                                                       
 
           </div>
@@ -99,4 +107,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Main;

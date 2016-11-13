@@ -7,7 +7,7 @@ import { BrowserRouter, Match, Miss } from "react-router";
 import App from "./components/App.js";
 import NotFound from "./components/NotFound.js";
 import Main from "./components/Main.js";
-//import Contact from "./components/Contact.js"
+// import Contact from "./components/Contact.js"
 
 // import CSS
 
@@ -38,8 +38,6 @@ const router = (
 
   )
 
-
-
-
-
 render(router, document.querySelector("#root"));
+
+

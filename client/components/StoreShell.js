@@ -1,17 +1,35 @@
 import React from "react";
 
 
+// components
+
+import Main from "./Main"
+
 // this is giving only one child props and such. I should be using a spread operator instead I think.
+
+
+// const StoreShell = React.createClass({
+//   render(){
+//     return(
+//         <div>
+//           {React.cloneElement(this.props.children, this.props)}
+//         </div>
+//       )
+//   }
+// })
+
+// export default StoreShell;
 
 
 const StoreShell = React.createClass({
   render(){
     return(
         <div>
-          {React.cloneElement(this.props.children, this.props)}
+          <Main {...this.props} />
         </div>
       )
   }
 })
 
 export default StoreShell;
+
