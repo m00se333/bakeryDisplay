@@ -22,11 +22,10 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, "localhost", function(err) {
+app.listen(PORT, function(err) {
   if (err) {
     console.log(err);
     return;
   }
-  console.log(__dirname);
-  console.log('Listening at http://localhost:7770');
+  console.log('Listening at ' + PORT);
 });
