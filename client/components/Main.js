@@ -1,46 +1,14 @@
 import React from "react";
 import CSSTransitionGroup from "react-addons-css-transition-group";
 
+
 // Components
 import Gallery from "./Gallery.js";
 import Contact from "./Contact.js";
 import Header from "./Header.js"
 
 
-// State Data
-import samplePasteries from "../data/galleryObject.js";
-
-class Main extends React.Component {
-
-  constructor(){
-    super();
-
-    this.loadGallery = this.loadGallery.bind(this);
-    this.openGallery = this.openGallery.bind(this);
-    this.closeGallery = this.closeGallery.bind(this);
-    this.openAndClose = this.openAndClose.bind(this);
-
-    
-  }
-
-  loadGallery(){
-    this.setState({
-      pictures: samplePasteries
-    })
-  }
-
- 
-  openGallery(){
-    this.setState({
-      open: true
-    });
-  }
-
-  closeGallery(){
-    this.setState({
-      open: false
-    });
-  }
+const Main = React.createClass({ 
 
   openAndClose(){
 
@@ -57,11 +25,11 @@ class Main extends React.Component {
       }
     }
 
-  }
+  },
 
   render(){
 
-    const galleryComponent = <Gallery pictures={this.props.images}
+    const galleryComponent = <Gallery images={this.props.images}
                                open={this.props.open}
                                openAndClose={this.openAndClose}
                                closeGallery={this.closeGallery}
@@ -105,6 +73,6 @@ class Main extends React.Component {
           )
     
   }
-}
+})
 
 export default Main;

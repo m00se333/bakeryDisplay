@@ -3,13 +3,11 @@ import CSSTransitionGroup from "react-addons-css-transition-group";
 
 const Gallery = React.createClass({
   
-  
-
   renderImgPreviews(key){
     
     return(
         <div className="imgContainer" key={key}>
-          <img src={this.props.pictures[key].image} alt="hello" />
+          <img src={this.props.images[key].image} alt="hello" />
         </div>
       )
   },
@@ -18,14 +16,14 @@ const Gallery = React.createClass({
 
   render(){
 
-    const images =  <div className="galleryFolder">
-                      {Object.keys(this.props.pictures).map(key => this.renderImgPreviews(key))}
-                    </div>
+    const galleryImages =  <div className="galleryFolder">
+                            {Object.keys(this.props.images).map(key => this.renderImgPreviews(key))}
+                           </div>
   
     const nothing = null;
 
     const galleryClosed = this.props.open === false;
-    const buttonStatus = galleryClosed? nothing : images;
+    const buttonStatus = galleryClosed? nothing : galleryImages;
 
     return( 
         <CSSTransitionGroup 
@@ -45,3 +43,6 @@ const Gallery = React.createClass({
 })
 
 export default Gallery;
+
+
+
