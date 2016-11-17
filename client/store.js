@@ -13,7 +13,7 @@ import rootReducer from "./reducers/mainReducer";
 
 // data Objects
 
-import cakeGallery from './data/galleryObject';
+import cakeGallery from './data/galleryObject'; 
 
 
 // default state object
@@ -21,7 +21,8 @@ import cakeGallery from './data/galleryObject';
 const defaultState = {
 
   cakeGallery,
-  open: false
+  open: false,
+  ordersRemaining: 5
 
 };
 

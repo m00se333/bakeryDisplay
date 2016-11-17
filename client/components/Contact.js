@@ -5,6 +5,9 @@ const Contact =  React.createClass({
   
   render(){
 
+
+    const orderCountdown = this.props.ordersRemaining !== 0 ? this.props.ordersRemaining : "no";
+
     return(
       <div className="contact">
         <div className="controls">
@@ -16,6 +19,11 @@ const Contact =  React.createClass({
           <span>Phone: Michael's #</span>
           <span>Email: Michael@michael.com</span>
 
+        </div>
+        <div className="countContainer">
+          <span>Michael is taking&nbsp;</span>
+          <span>{orderCountdown}</span> 
+          <span>&nbsp;more orders</span>   
         </div>
       </div>
        

@@ -7,6 +7,9 @@ import { BrowserRouter, Match, Miss } from "react-router";
 import App from "./components/App.js";
 import NotFound from "./components/NotFound.js";
 import Main from "./components/Main.js";
+
+//import Dashboard from "./components/Dashboard.js";
+
 // import Contact from "./components/Contact.js"
 
 // import CSS
@@ -30,7 +33,7 @@ const router = (
     <Provider store={store}>
       <Router history={history}>
         <Route path="/" component={App}>
-          <IndexRoute component={Main}></IndexRoute> 
+          <IndexRoute component={Main}></IndexRoute>
           <Route path="*" component={NotFound}></Route>
         </Route>
       </Router>

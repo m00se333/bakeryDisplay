@@ -66,7 +66,8 @@ const Main = React.createClass({
 
               <Contact
                      openGallery={this.props.openGallery}
-                     closeGallery={this.props.closeGallery}/>
+                     closeGallery={this.props.closeGallery}
+                     ordersRemaining={this.props.ordersRemaining}/>
                                                       
 
           </div>

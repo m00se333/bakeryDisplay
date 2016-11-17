@@ -12,6 +12,7 @@ body {
     background: #F6EEC5;
 }
 
+
 h1, p, a, span {
   color: #38230E;
   font-family: 'Merriweather', serif;
@@ -22,7 +23,6 @@ h1, p, a, span {
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 
 
   .header{
@@ -42,7 +42,8 @@ h1, p, a, span {
 
       .slideInPictures{
         display: flex;
-        overflow: scroll;
+        overflow-y: hidden;
+        overflow-x: scroll;
         
 
         .galleryFolder{
@@ -66,7 +67,6 @@ h1, p, a, span {
     border-bottom: 2px solid #38230E;
     display: flex;
     flex: 1; 
-    overflow: scroll;
     flex-direction: column;
 
       .controls{
@@ -96,6 +96,14 @@ h1, p, a, span {
             margin-top: 1%;
             align-self: center;
           }
+      }
+      .countContainer{
+        display: flex;
+        align-self: center;
+
+        span{
+          font-size: 4vw;
+        }
       }
   }
 
