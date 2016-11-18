@@ -1,5 +1,5 @@
 #appContainer{
-  height: 100vh;
+  flex: 3;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@
 
           button{
             flex: 1; 
-            font-size: 1.5vw;
+            font-size: 2vw;
             height: 100%;
 
             @media #{$iphone6Plus_portrait, $iphone_portrait}{
@@ -64,9 +64,11 @@
 
           h1{
             text-align: center;
+            font-size: 3vw;
           }
           span{
             margin-top: 1%;
+            font-size: 2vw;
             align-self: center;
           }
       }

@@ -12,7 +12,7 @@ import Header from "./Header";
 const StoreShell = React.createClass({
   render(){
     return(
-        <div>
+        <div className="theBigWrapper">
           <Header ordersRemaining={this.props.ordersRemaining}
                   location={this.props.location}/>
           {React.cloneElement(this.props.children, this.props)}

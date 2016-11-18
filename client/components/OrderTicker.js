@@ -19,8 +19,6 @@ const OrderTicker = React.createClass({
 
     return(
 
-
-
       <div className="order">
         <div className="countContainer">
           <span>Michael is taking&nbsp;</span>

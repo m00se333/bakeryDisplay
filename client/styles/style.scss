@@ -18,10 +18,21 @@ h1, p, a, span {
   font-family: 'Merriweather', serif;
 }
 
-// Header component present on all pages for the moment
-@import "header";
-// Landing/Index page component with the slick gallery
-@import "landing";
+.theBigWrapper{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+    // Header component present on all pages for the moment
+    @import "header";
+    // Landing/Index page component with the slick gallery
+    @import "landing";
+    // Dashboard component for both normal users and admins
+    @import "dashboard";
+}
+
+
 
 
 // CSS Transitions

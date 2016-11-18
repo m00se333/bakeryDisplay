@@ -1,12 +1,13 @@
 .header {
   display: flex;
   align-self: center;
-  flex-direction: column; }
+  flex-direction: column;
+  flex: 1; }
   .header h1 {
-    text-align: center; }
+    text-align: center;
+    font-size: 3vw; }
   .header .order {
     display: flex;
-    flex: 1;
     align-self: center;
     flex-direction: column; }
     .header .order .countContainer {
@@ -17,6 +18,14 @@
     .header .order .orderButtonBox {
       align-self: center;
       display: flex;
-      margin: 0 0 0; }
+      margin: 2% 0;
+      width: 100%; }
+      .header .order .orderButtonBox button {
+        width: 50%;
+        margin: 0 auto;
+        height: 100%; }
+        .header .order .orderButtonBox button a {
+          font-size: 3vw;
+          text-decoration: none; }
 
 /*# sourceMappingURL=header.css.map */

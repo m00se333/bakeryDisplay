@@ -1,0 +1,12 @@
+.dashContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  flex: 4;
+  width: 96%;
+  align-self: center;
+  margin-bottom: 2%; }
+  .dashContainer .box {
+    height: 100%; }
+
+/*# sourceMappingURL=dashboard.css.map */
