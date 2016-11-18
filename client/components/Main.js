@@ -5,7 +5,8 @@ import CSSTransitionGroup from "react-addons-css-transition-group";
 // Components
 import Gallery from "./Gallery.js";
 import Contact from "./Contact.js";
-import Header from "./Header.js"
+import Header from "./Header.js";
+
 
 
 const Main = React.createClass({ 
@@ -51,7 +52,6 @@ const Main = React.createClass({
 
       return(
           <div id="appContainer">
-              <Header />
             
               <CSSTransitionGroup className="openGallery" 
                                   style={this.openAndClose()}
@@ -66,10 +66,8 @@ const Main = React.createClass({
 
               <Contact
                      openGallery={this.props.openGallery}
-                     closeGallery={this.props.closeGallery}
-                     ordersRemaining={this.props.ordersRemaining}/>
-                                                      
-
+                     closeGallery={this.props.closeGallery}/>
+                                                 
           </div>
           )
     

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-self: center;
+  flex-direction: column; }
+  .header h1 {
+    text-align: center; }
+  .header .order {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    flex-direction: column; }
+    .header .order .countContainer {
+      display: flex;
+      align-self: center; }
+      .header .order .countContainer span {
+        font-size: 4vw; }
+    .header .order .orderButtonBox {
+      align-self: center;
+      display: flex;
+      margin: 0 0 0; }
+
+/*# sourceMappingURL=header.css.map */

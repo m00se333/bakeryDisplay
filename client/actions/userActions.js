@@ -10,3 +10,9 @@ export function closeGallery(){
     type: "CLOSE_GALLERY"
   }
 }
+
+export function addOrder(){
+  return{
+    type: "ADD_ORDER"
+  }
+}

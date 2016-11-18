@@ -7,6 +7,7 @@ import { BrowserRouter, Match, Miss } from "react-router";
 import App from "./components/App.js";
 import NotFound from "./components/NotFound.js";
 import Main from "./components/Main.js";
+import OrderTicker from "./components/OrderTicker.js";
 
 //import Dashboard from "./components/Dashboard.js";
 
@@ -34,7 +35,7 @@ const router = (
       <Router history={history}>
         <Route path="/" component={App}>
           <IndexRoute component={Main}></IndexRoute>
-          <Route path="*" component={NotFound}></Route>
+          <Route path="/order" component={OrderTicker}></Route>
         </Route>
       </Router>
   </Provider>

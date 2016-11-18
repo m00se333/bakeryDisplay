@@ -12,14 +12,32 @@ h1, p, a, span {
   color: #38230E;
   font-family: 'Merriweather', serif; }
 
+.header {
+  display: flex;
+  align-self: center;
+  flex-direction: column; }
+  .header h1 {
+    text-align: center; }
+  .header .order {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    flex-direction: column; }
+    .header .order .countContainer {
+      display: flex;
+      align-self: center; }
+      .header .order .countContainer span {
+        font-size: 4vw; }
+    .header .order .orderButtonBox {
+      align-self: center;
+      display: flex;
+      margin: 0 0 0; }
+
 #appContainer {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column; }
-  #appContainer .header {
-    display: flex;
-    align-self: center; }
   #appContainer .openGallery {
     border-top: 2px solid #38230E;
     border-bottom: 2px solid #38230E;
@@ -63,11 +81,6 @@ h1, p, a, span {
       #appContainer .contact .contact-info span {
         margin-top: 1%;
         align-self: center; }
-    #appContainer .contact .countContainer {
-      display: flex;
-      align-self: center; }
-      #appContainer .contact .countContainer span {
-        font-size: 4vw; }
 
 .openGallery-enter {
   transition: all 1s; }

@@ -18,96 +18,10 @@ h1, p, a, span {
   font-family: 'Merriweather', serif;
 }
 
-#appContainer{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
-
-  .header{
-    display: flex;
-    align-self: center;
-  }
-
-
-  .openGallery{
-    border-top: 2px solid #38230E;
-    border-bottom: 2px solid #38230E;
-    -webkit-transition: height 0.25s;
-    transition: height 0.25s;
-    transition-timing-function: ease-in;
-    display: flex;
-    
-
-      .slideInPictures{
-        display: flex;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        
-
-        .galleryFolder{
-          display: flex;
-          
-
-          .imgContainer{       
-            order: 1;
-            height: 50vh;
-       
-            img{
-              height: 100%;   
-            }
-        }
-      }    
-    }
-  } // End Open Gallery
-  
-  // Contact Styles
-  .contact{
-    border-bottom: 2px solid #38230E;
-    display: flex;
-    flex: 1; 
-    flex-direction: column;
-
-      .controls{
-        display: flex;
-        align-self: center;
-        margin: 1%;
-
-          button{
-            flex: 1; 
-            font-size: 1.5vw;
-            height: 100%;
-
-            @media #{$iphone6Plus_portrait, $iphone_portrait}{
-                font-size: 4vh;
-              }
-          }
-      }
-      .contact-info{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-
-          h1{
-            text-align: center;
-          }
-          span{
-            margin-top: 1%;
-            align-self: center;
-          }
-      }
-      .countContainer{
-        display: flex;
-        align-self: center;
-
-        span{
-          font-size: 4vw;
-        }
-      }
-  }
-
-}
+// Header component present on all pages for the moment
+@import "header";
+// Landing/Index page component with the slick gallery
+@import "landing";
 
 
 // CSS Transitions
