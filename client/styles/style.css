@@ -97,14 +97,23 @@ h1, p, a, span {
           align-self: center; }
   .theBigWrapper .dashContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: white;
-    flex: 4;
+    flex: 4 1 100px;
     width: 96%;
     align-self: center;
     margin-bottom: 2%; }
-    .theBigWrapper .dashContainer .box {
-      height: 100%; }
+    .theBigWrapper .dashContainer .orderForm {
+      display: flex;
+      flex-direction: column;
+      width: 50%; }
+    .theBigWrapper .dashContainer .orderPreview {
+      width: 49%;
+      height: 96%;
+      margin: 1%;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column; }
 
 .openGallery-enter {
   transition: all 1s; }

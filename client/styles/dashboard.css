@@ -1,12 +1,21 @@
 .dashContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: white;
-  flex: 4;
+  flex: 4 1 100px;
   width: 96%;
   align-self: center;
   margin-bottom: 2%; }
-  .dashContainer .box {
-    height: 100%; }
+  .dashContainer .orderForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+  .dashContainer .orderPreview {
+    width: 49%;
+    height: 96%;
+    margin: 1%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; }
 
 /*# sourceMappingURL=dashboard.css.map */
