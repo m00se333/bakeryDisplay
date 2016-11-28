@@ -6,7 +6,9 @@
   #appContainer .gallery {
     display: flex;
     flex: 2 1 100px;
-    background: white; }
+    background: white;
+    width: 98%;
+    align-self: center; }
     #appContainer .gallery .slick-track {
       height: 100%; }
       #appContainer .gallery .slick-track .slick-slide {

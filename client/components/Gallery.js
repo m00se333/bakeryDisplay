@@ -21,7 +21,8 @@ const Gallery = React.createClass({
           dots: false,
           arrows: false,
           autoplay: true,
-          autoplaySpeed: 2000
+          autoplaySpeed: 5000,
+          fade: true
 
     }
 
