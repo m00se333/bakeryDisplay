@@ -21,9 +21,8 @@ h1, p, a, span {
     display: flex;
     align-self: center;
     flex-direction: column;
-    flex: 1 1 100px;
-    width: 100%;
-    margin: 0 0 1% 0; }
+    flex: 1 1 70px;
+    width: 100%; }
     .theBigWrapper .header h1 {
       text-align: center;
       font-size: 3vw; }
@@ -55,23 +54,15 @@ h1, p, a, span {
     flex-direction: column; }
     .theBigWrapper #appContainer .gallery {
       display: flex;
-      flex: 1; }
-      .theBigWrapper #appContainer .gallery .galleryMaybe {
-        display: flex;
-        flex: 1; }
-        .theBigWrapper #appContainer .gallery .galleryMaybe .slick-list {
-          display: flex;
-          flex: 1; }
-          .theBigWrapper #appContainer .gallery .galleryMaybe .slick-list .slick-track {
-            display: flex;
-            flex: 1; }
-            .theBigWrapper #appContainer .gallery .galleryMaybe .slick-list .slick-track .slick-slide {
-              height: 100%;
-              width: 100%;
-              background: white; }
-              .theBigWrapper #appContainer .gallery .galleryMaybe .slick-list .slick-track .slick-slide img {
-                margin: 0 auto;
-                height: 100%; }
+      flex: 2 1 100px;
+      background: white; }
+      .theBigWrapper #appContainer .gallery .slick-track {
+        height: 100%; }
+        .theBigWrapper #appContainer .gallery .slick-track .slick-slide {
+          background: white; }
+          .theBigWrapper #appContainer .gallery .slick-track .slick-slide img {
+            margin: 0 auto;
+            height: 100%; }
     .theBigWrapper #appContainer .contact {
       border-bottom: 2px solid #38230E;
       display: flex;

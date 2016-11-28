@@ -7,39 +7,24 @@
     .gallery {
         
         display: flex;
-        flex: 1;
+        flex: 2 1 100px;
+        background: white;
+        
+        .slick-track{
+          height: 100%;
 
-        .galleryMaybe {
-          
-          display: flex;
-          flex: 1;
+          .slick-slide{
+            
+            background: white;
 
-            .slick-list {
-                
-                display: flex;
-                flex: 1;
-
-              .slick-track{
-                
-                display: flex;
-                flex: 1;
-
-                  .slick-slide{
-                    height: 100%;
-                    width: 100%;
-                    background: white;
-
-                      img {
-                          margin: 0 auto;
-                          height: 100%;
-
-                      }
-                  }
+              img {
+                  margin: 0 auto;
+                  height: 100%;
 
               }
-            }
-
+          }
         }
+
     }
 
    // End Open Gallery

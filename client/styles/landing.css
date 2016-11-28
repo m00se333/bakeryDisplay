@@ -5,23 +5,15 @@
   flex-direction: column; }
   #appContainer .gallery {
     display: flex;
-    flex: 1; }
-    #appContainer .gallery .galleryMaybe {
-      display: flex;
-      flex: 1; }
-      #appContainer .gallery .galleryMaybe .slick-list {
-        display: flex;
-        flex: 1; }
-        #appContainer .gallery .galleryMaybe .slick-list .slick-track {
-          display: flex;
-          flex: 1; }
-          #appContainer .gallery .galleryMaybe .slick-list .slick-track .slick-slide {
-            height: 100%;
-            width: 100%;
-            background: white; }
-            #appContainer .gallery .galleryMaybe .slick-list .slick-track .slick-slide img {
-              margin: 0 auto;
-              height: 100%; }
+    flex: 2 1 100px;
+    background: white; }
+    #appContainer .gallery .slick-track {
+      height: 100%; }
+      #appContainer .gallery .slick-track .slick-slide {
+        background: white; }
+        #appContainer .gallery .slick-track .slick-slide img {
+          margin: 0 auto;
+          height: 100%; }
   #appContainer .contact {
     border-bottom: 2px solid #38230E;
     display: flex;

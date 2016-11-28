@@ -27,13 +27,11 @@ const Gallery = React.createClass({
 
     return( 
         
-        <div className="gallery">
-          <Slider className="galleryMaybe" {...settings}>
+          <Slider className="gallery" {...settings}>
             
             {Object.keys(this.props.images).map(key => this.renderImgPreviews(key))}
 
           </Slider>
-        </div>
 
 
     )
