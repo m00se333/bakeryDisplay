@@ -5,7 +5,7 @@ const OrderTicker = React.createClass({
 
   render(){
     
-    const orderCountdown = this.props.ordersRemaining !== 0 ? this.props.ordersRemaining : "no more";
+    const orderCountdown = this.props.ordersRemaining > 0 ? this.props.ordersRemaining : "no more";
     const g = this.props.ordersRemaining === 1 ? "":"s";
     // g stands for grammar
 

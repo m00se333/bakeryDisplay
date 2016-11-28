@@ -1,7 +1,16 @@
 function ordersRemaining(state=5, action){
 
-  console.log("orders reducer");
-  return state;
+  switch(action.type){
+
+    case "ADD_ORDER":
+
+      console.log("adding an order to the list");
+      return (state - 1);
+  
+    default:
+       return state;
+  }
+  
 
 }
 

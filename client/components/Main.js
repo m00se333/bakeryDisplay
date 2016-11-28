@@ -30,17 +30,17 @@ const Main = React.createClass({
 
   render(){
 
-    const galleryComponent = <Gallery images={this.props.images}
-                               open={this.props.open}
-                               openAndClose={this.openAndClose}
-                               closeGallery={this.closeGallery}
-                               />
+    // const galleryComponent = <Gallery images={this.props.images}
+    //                            open={this.props.open}
+    //                            openAndClose={this.openAndClose}
+    //                            closeGallery={this.closeGallery}
+    //                            />
 
-    const nothing = null;
+    // const nothing = null;
 
-    const galleryClosed = this.props.open === false;
+    // const galleryClosed = this.props.open === false;
 
-    const galleryStatus = galleryClosed? nothing : galleryComponent;
+    // const galleryStatus = galleryClosed? nothing : galleryComponent;
 
 
     // This is rendering the Header Component
@@ -53,16 +53,7 @@ const Main = React.createClass({
       return(
           <div id="appContainer">
             
-              <CSSTransitionGroup className="openGallery" 
-                                  style={this.openAndClose()}
-                                  component="div"
-                                  transitionName="openGallery"
-                                  transitionEnterTimeout={1000}
-                                  transitionLeaveTimeout={250}
-                                  >
-                    {galleryStatus}
-                       
-              </CSSTransitionGroup>
+              <Gallery images={this.props.images} />
 
               <Contact
                      openGallery={this.props.openGallery}
