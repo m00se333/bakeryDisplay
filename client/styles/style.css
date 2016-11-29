@@ -55,16 +55,14 @@ h1, p, a, span {
     .theBigWrapper #appContainer .gallery {
       display: flex;
       flex: 2 1 100px;
-      background: white;
       width: 98%;
       align-self: center; }
       .theBigWrapper #appContainer .gallery .slick-track {
         height: 100%; }
-        .theBigWrapper #appContainer .gallery .slick-track .slick-slide {
-          background: white; }
-          .theBigWrapper #appContainer .gallery .slick-track .slick-slide img {
-            margin: 0 auto;
-            height: 100%; }
+        .theBigWrapper #appContainer .gallery .slick-track img {
+          margin: 0 auto;
+          height: 98%;
+          border: 5px double #38230E; }
     .theBigWrapper #appContainer .contact {
       border-bottom: 2px solid #38230E;
       display: flex;

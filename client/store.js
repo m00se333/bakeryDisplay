@@ -3,10 +3,6 @@ import { syncHistoryWithStore } from "react-router-redux";
 import { browserHistory } from "react-router";
 
 
-// all roots
-
-
-
 // root reducer
 
 import rootReducer from "./reducers/mainReducer";
@@ -21,7 +17,6 @@ import cakeGallery from './data/galleryObject';
 const defaultState = {
 
   cakeGallery,
-  open: false,
   ordersRemaining: 5
 
 };
