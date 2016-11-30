@@ -9,8 +9,6 @@ const Header = React.createClass({
     return(
         <div className="header">
           <h1>Michael's Bakery</h1>
-          <OrderTicker ordersRemaining={this.props.ordersRemaining}
-                       location={this.props.location} />
         </div>
       )
 
