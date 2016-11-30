@@ -1,0 +1,44 @@
+.header{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  flex: 1 1 70px;
+  width: 100%;
+
+  h1{
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .order{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+      
+    .countContainer{
+      display: flex;
+      align-self: center;
+
+        span{
+          font-size: 4vw;
+        }
+    }
+    .orderButtonBox{
+      align-self: center;
+      display: flex;
+      margin: 2% 0;
+      width: 100%;
+
+      button{
+        width: 50%;
+        margin: 0 auto;
+        height: 100%;
+
+        a{
+          font-size: 3vw;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

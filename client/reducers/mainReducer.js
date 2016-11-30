@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
 import { routerReducer } from "react-router-redux";
 
-import cakeGallery from "./cakeGalleryReducer.js";
-import open from "./openReducer.js";
+import userId from "./userReducer";
+import cakeGallery from "./cakeGalleryReducer";
+import ordersRemaining from "./ordersRemainingReducer";
 
-const rootReducer = combineReducers({cakeGallery, open, routing: routerReducer});
+const rootReducer = combineReducers({userId, cakeGallery, ordersRemaining, routing: routerReducer});
 
 export default rootReducer;

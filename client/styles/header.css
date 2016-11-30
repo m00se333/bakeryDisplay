@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  flex: 1 1 70px;
+  width: 100%; }
+  .header h1 {
+    text-align: center;
+    font-size: 3vw; }
+  .header .order {
+    display: flex;
+    align-self: center;
+    flex-direction: column; }
+    .header .order .countContainer {
+      display: flex;
+      align-self: center; }
+      .header .order .countContainer span {
+        font-size: 4vw; }
+    .header .order .orderButtonBox {
+      align-self: center;
+      display: flex;
+      margin: 2% 0;
+      width: 100%; }
+      .header .order .orderButtonBox button {
+        width: 50%;
+        margin: 0 auto;
+        height: 100%; }
+        .header .order .orderButtonBox button a {
+          font-size: 3vw;
+          text-decoration: none; }
+
+/*# sourceMappingURL=header.css.map */

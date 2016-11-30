@@ -5,6 +5,8 @@ html {
     height: 100%;
 }
 
+
+
 body {
     height: 100%;
     overflow: auto;
@@ -12,99 +14,26 @@ body {
     background: #F6EEC5;
 }
 
+
 h1, p, a, span {
   color: #38230E;
   font-family: 'Merriweather', serif;
 }
 
-#appContainer{
+.theBigWrapper{
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 
-
-  .header{
-    display: flex;
-    align-self: center;
-  }
-
-
-  .openGallery{
-    border-top: 2px solid #38230E;
-    border-bottom: 2px solid #38230E;
-    -webkit-transition: height 0.25s;
-    transition: height 0.25s;
-    transition-timing-function: ease-in;
-    display: flex;
-    
-
-      .slideInPictures{
-        display: flex;
-        overflow: scroll;
-        
-
-        .galleryFolder{
-          display: flex;
-          
-
-          .imgContainer{       
-            order: 1;
-            height: 50vh;
-       
-            img{
-              height: 100%;   
-            }
-        }
-      }    
-    }
-  } // End Open Gallery
-  
-  // Contact Styles
-  .contact{
-    border-bottom: 2px solid #38230E;
-    display: flex;
-    flex: 1; 
-    overflow: scroll;
-    flex-direction: column;
-
-      .controls{
-        display: flex;
-        align-self: center;
-        margin: 1%;
-
-          button{
-            flex: 1; 
-            font-size: 1.5vw;
-            height: 100%;
-
-            @media #{$iphone6Plus_portrait, $iphone_portrait}{
-                font-size: 4vh;
-              }
-          }
-      }
-      .contact-info{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-
-          h1{
-            text-align: center;
-          }
-          span{
-            margin-top: 1%;
-            align-self: center;
-          }
-      }
-  }
-
+    // Header component present on all pages for the moment
+    @import "header";
+    // Landing/Index page component with the slick gallery
+    @import "landing";
+    // Dashboard component for both normal users and admins
+    @import "dashboard";
 }
 
-
-// CSS Transitions
-
-@import "transitions";
 
 
 

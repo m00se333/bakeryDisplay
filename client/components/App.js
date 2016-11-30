@@ -11,7 +11,8 @@ import StoreShell from "./StoreShell.js";
 function mapStateToProps(state){
   return {
     images: state.cakeGallery,
-    open: state.open
+    userId: state.userId,
+    ordersRemaining: state.ordersRemaining
   }
 }
 

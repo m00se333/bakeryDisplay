@@ -1,5 +1,5 @@
 import React from "react";
-import CSSTransitionGroup from "react-addons-css-transition-group";
+import Slider from "react-slick";
 
 const Gallery = React.createClass({
   
@@ -16,27 +16,24 @@ const Gallery = React.createClass({
 
   render(){
 
-    const galleryImages =  <div className="galleryFolder">
-                            {Object.keys(this.props.images).map(key => this.renderImgPreviews(key))}
-                           </div>
-  
-    const nothing = null;
+    const settings = {
 
-    const galleryClosed = this.props.open === false;
-    const buttonStatus = galleryClosed? nothing : galleryImages;
+          dots: false,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          fade: true
+
+    }
 
     return( 
-        <CSSTransitionGroup 
-                  className="slideInPictures"
-                  component="div"
-                  transitionName="slideInPictures"
-                  transitionAppear={true}
-                  transitionAppearTimeout={1000}
-                  transitionEnterTimeout={1}
-                  transitionLeaveTimeout={1}
-                  >
-          {buttonStatus}
-        </CSSTransitionGroup>
+        
+          <Slider className="gallery" {...settings}>
+            
+            {Object.keys(this.props.images).map(key => this.renderImgPreviews(key))}
+
+          </Slider>
+
 
     )
   }
