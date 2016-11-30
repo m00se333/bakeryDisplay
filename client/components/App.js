@@ -1,6 +1,3 @@
-// this file is basically creating a component that will
-// "sprinkle on" props and dispatchers to our Main component
-
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/userActions.js";

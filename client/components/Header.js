@@ -8,7 +8,7 @@ const Header = React.createClass({
 
     return(
         <div className="header">
-          <h1>Michael's Bakery</h1>
+          <h1>Michael's Homemade</h1>
         </div>
       )
 

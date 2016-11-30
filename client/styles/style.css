@@ -21,68 +21,61 @@ h1, p, a, span {
     display: flex;
     align-self: center;
     flex-direction: column;
-    flex: 1 1 70px;
+    flex: 0.7 1 50px;
     width: 100%; }
+    @media only screen and (orientation: portrait) {
+      .theBigWrapper .header {
+        flex: 0.5 1 10px; } }
     .theBigWrapper .header h1 {
       text-align: center;
-      font-size: 3vw; }
-    .theBigWrapper .header .order {
-      display: flex;
-      align-self: center;
-      flex-direction: column; }
-      .theBigWrapper .header .order .countContainer {
-        display: flex;
-        align-self: center; }
-        .theBigWrapper .header .order .countContainer span {
-          font-size: 4vw; }
-      .theBigWrapper .header .order .orderButtonBox {
-        align-self: center;
-        display: flex;
-        margin: 2% 0;
-        width: 100%; }
-        .theBigWrapper .header .order .orderButtonBox button {
-          width: 50%;
-          margin: 0 auto;
-          height: 100%; }
-          .theBigWrapper .header .order .orderButtonBox button a {
-            font-size: 3vw;
-            text-decoration: none; }
+      font-size: 7vw;
+      margin-top: 1%; }
+      @media only screen and (orientation: portrait) {
+        .theBigWrapper .header h1 {
+          padding-top: 3%;
+          font-size: 8vw; } }
   .theBigWrapper #appContainer {
-    flex: 3 1 100px;
+    flex: 4 1 100px;
     width: 100%;
     display: flex;
     flex-direction: column; }
     .theBigWrapper #appContainer .gallery {
       display: flex;
       flex: 2 1 100px;
-      width: 98%;
+      width: 90%;
       align-self: center; }
       .theBigWrapper #appContainer .gallery .slick-track {
         height: 100%; }
-        .theBigWrapper #appContainer .gallery .slick-track img {
+        @media only screen and (orientation: portrait) {
+          .theBigWrapper #appContainer .gallery .slick-track .imgContainer {
+            display: flex; } }
+        .theBigWrapper #appContainer .gallery .slick-track .imgContainer img {
           margin: 0 auto;
           height: 98%;
           border: 5px double #38230E; }
+          @media only screen and (orientation: portrait) {
+            .theBigWrapper #appContainer .gallery .slick-track .imgContainer img {
+              width: 98%;
+              height: 95%;
+              border: 5px double #38230E; } }
     .theBigWrapper #appContainer .contact {
-      border-bottom: 2px solid #38230E;
       display: flex;
       flex: 1;
       flex-direction: column; }
-      .theBigWrapper #appContainer .contact .controls {
-        display: flex;
-        align-self: center;
-        margin: 1%; }
       .theBigWrapper #appContainer .contact .contact-info {
         display: flex;
         flex-direction: column;
         align-self: center; }
         .theBigWrapper #appContainer .contact .contact-info h1 {
           text-align: center;
-          font-size: 3vw; }
+          font-size: 5.5vw;
+          margin-top: 1%; }
         .theBigWrapper #appContainer .contact .contact-info span {
           margin-top: 1%;
-          font-size: 2vw;
+          font-size: 5vw;
           align-self: center; }
+        .theBigWrapper #appContainer .contact .contact-info span:nth-of-type(2) {
+          margin-bottom: 2%; }
   .theBigWrapper .dashContainer {
     display: flex;
     flex-direction: column;
