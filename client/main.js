@@ -20,8 +20,6 @@ import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { Provider } from "react-redux";
 
 
-// make components const [COMPONENT] = React.createClass({})
-
 
 // store
 import store, { history } from "./store.js";

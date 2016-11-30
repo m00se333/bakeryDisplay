@@ -2,7 +2,6 @@ import { createStore, compose } from "redux";
 import { syncHistoryWithStore } from "react-router-redux";
 import { browserHistory } from "react-router";
 
-
 // root reducer
 
 import rootReducer from "./reducers/mainReducer";
@@ -16,6 +15,7 @@ import cakeGallery from './data/galleryObject';
 
 const defaultState = {
 
+  userId: null,
   cakeGallery,
   ordersRemaining: 5
 

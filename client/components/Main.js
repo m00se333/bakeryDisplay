@@ -30,26 +30,6 @@ const Main = React.createClass({
 
   render(){
 
-    // const galleryComponent = <Gallery images={this.props.images}
-    //                            open={this.props.open}
-    //                            openAndClose={this.openAndClose}
-    //                            closeGallery={this.closeGallery}
-    //                            />
-
-    // const nothing = null;
-
-    // const galleryClosed = this.props.open === false;
-
-    // const galleryStatus = galleryClosed? nothing : galleryComponent;
-
-
-    // This is rendering the Header Component
-    //                       An Unnamed CSS Transiton group...
-    //                   and Contact Component
-
-    // this is also Main.js but exports App...
-
-
       return(
           <div id="appContainer">
             
