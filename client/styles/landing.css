@@ -7,7 +7,8 @@
     display: flex;
     flex: 2 1 100px;
     width: 90%;
-    align-self: center; }
+    align-self: center;
+    pointer-events: none; }
     #appContainer .gallery .slick-track {
       height: 100%; }
       @media only screen and (orientation: portrait) {

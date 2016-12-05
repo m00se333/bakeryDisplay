@@ -15,7 +15,6 @@ app.use(require('webpack-dev-middleware')(compiler, {
 // SOLVED IT THANKS FOR NOTHING WES
 app.use(express.static(path.join(__dirname + "/client")));
 
-
 app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('*', function(req, res) {
