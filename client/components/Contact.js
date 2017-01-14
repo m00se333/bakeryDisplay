@@ -8,9 +8,8 @@ const Contact =  React.createClass({
     return(
       <div className="contact">
         <div className="contact-info">
-          <h1>Call or Email to place your order today!</h1>
-          <span>Phone: (760)-486-7029</span>
-          <span>Email: michaelshomemade@gomail.com</span>
+          <h1>Send me an email to place an order today!</h1>
+          <span>michaelshomemade@gmail.com</span>
         </div>
       </div>
        
